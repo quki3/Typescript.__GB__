@@ -1,0 +1,1 @@
+# Typescript.__GB__
