@@ -51,3 +51,23 @@
 # usando el archivo tsconfig.json
 - `tsc --init` //iniciamos el config.json
 - `tsc`// busca las configuraciones ./ y genera de forma automatica el archivo js
+
+
+# clases
+entidades relacones
+# definiendo clases y consructores
+```typescript
+  enum PhotoIrientetion{
+     lanscape,
+     Portrait,
+     Square,
+     Panorama
+  }
+  
+  //definir una clase
+  class Picture {
+     //propiedades
+     id:number;
+     title:
+  }
+```
