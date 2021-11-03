@@ -71,3 +71,56 @@ entidades relacones
      title:
   }
 ```
+
+# clases 
+es una abtraccion de un conjunto de objetos
+```typescript
+enum PhotoOrientation{
+  Landscape,
+  Portrait,
+  Square,
+  Panorama
+}
+
+class Picture {
+  //Propiedados
+  id:number;
+  title:string;
+  orientation:PhotoOrientation;
+  
+  //en el construcctor definimos los atributos que se crean necesarios para poder dfefir nuestro objeto
+  constructor(id:number,
+               title:string,
+               orientation:PhotoOrientacion,
+               ){
+               //this hace referencia a los distintos atributos que tiene nuestra clase
+               this.id:id;
+               this.title = title;
+               this.orientation = orientation;
+ }
+ //comportamiento
+ toId(){
+    return `[id:${this.id}]`;
+ }
+```
+# clases metodos set y get
+
+# importando y exportando modulos
+generalmente se define un modulo con la idea de agrupar codigo relacionado 
+podemos tomar criterios en torno a la funcinalidad, feacture, utilitarios, modelos,etc
+- import
+- export
+
+# Principio de responsabilidad Unica
+un archivo deberia tener un proposito o responsabilidad unica: definir una clase, una interfaz, un enumerado, etc
+esto mejora la legibillidad de codigo , y facilita su lectura, testing y favorece su mantenimiento
+
+# resolviendo modulos
+observando referencias relativas y no relativas
+- classic [modulos amd,system,es2015] //poco configurable
+- node [modulos commonJS o umd] //mas configurable
+
+# webpack y agrupacion de modulos
+empaquetador de modulos
+- instalacion `npm i typescript wabpack webpack-cli`
+
