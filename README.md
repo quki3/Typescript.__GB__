@@ -1,4 +1,5 @@
 # Typescript.__GB__
+- `https://www.typescriptlang.org/` documentacion oficial
 - es un lenguaje de programacion tipado 
 - de alto nivel alto nivel de abtracion del codigo maquina
 - genera como resultado codigo javascript
@@ -13,21 +14,22 @@
 - Actualizaciones periodicas
 - comunidad creciente
 - prevenir cerca de 15% de bugs
-# instalacion de herramientas 
-`-npm i -g typescript`
-`-tsc -v` //vemos las version
+# instalacion de herramientas
+- instalar node version lts
+`-npm i -g typescript` istala typescrit tsc
+- `tsc -v` vemos las version
 # usar el compilador tsc
 `mkdir typescrip/hello.ts
- cat                          console.log('hello typescript')`
-`tsc hello.ts` //esto compila archivos js
-`node hello.js`
+- ` cat > console.log('hello typescript')` escribimos codigo en el 
+`tsc hello.ts` esto compila archivos js
+`node hello.js` Corre el archivo 
 - Usando el compilador tsc la opcion --watch
-`tsc --watch hello.ts`//se mantiene escuchando los cambios
+`tsc --watch hello.ts` se mantiene escuchando los cambios
 
 # Archivo de configuracion tsconfig.json
 - espefica la raiz de nuestro proyecto Typescript
 - permite configurar parametros para el compilador de typescript
-- `tsc --init` //iniciamos el config.json
+- `tsc --init` crea iniciamos el config.json
 ```json
 {
 "extends":"./configs/base",//?erencia de configuraciones
@@ -48,9 +50,30 @@
         
 }
 ```
-# usando el archivo tsconfig.json
+*usando el archivo tsconfig.json*
 - `tsc --init` //iniciamos el config.json
 - `tsc`// busca las configuraciones ./ y genera de forma automatica el archivo js
+- en el tsconfig.json la opcion `"outDir":"./dist"` nos permite
+configurar el output del comando tsc que va a compilar el codigo
+typescript a js en la carpeta dist 
+
+*tipo de dato explicito*
+`nombredelaVariable`:`Tipodedato`
+*tipos primitivos*
+- Number
+- Boolean
+- String
+- Array
+- Tuple
+- Enum
+- Any
+- Void
+- Null
+- Undefined
+- Never
+- Object
+*tipo de dato implicito*
+`nombredelaVariable`=`valor`
 
 
 # clases
