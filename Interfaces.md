@@ -1,3 +1,5 @@
+
+```ts
 interface User {
   name: string;
   id: number;
@@ -11,3 +13,4 @@ Type '{ username: string; id: number; }' is not assignable to type 'User'.
   Object literal may only specify known properties, and 'username' does not exist in type 'User'.
   id: 0,
 };
+```
